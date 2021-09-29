@@ -1,0 +1,38 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Web Development Ebook
+            </h1><p class="lead">learn web development front to back</p>
+
+            <form sction="/charge" method="POST">
+            <script
+              // Stripe checkout
+                src="https://checkout.stripe.com/checkout.js"
+                class="stripe-button"
+                data-key="pk_live_51JTZFYLvguLh3ikARR2NHZ5pbbrXaXm8z6ubsL6gvDi9RQGusMB9WSDpbPMbuqbnOv813TXru5R5oBUgCE8Ls6Qe00GhwUm5v9"
+                data-amount="999"
+                data-name="Buyerbook"
+                data-description="Harry Potter"
+                data-image="/img/marketplace.jpeg"
+                data-locale="auto">
+            </script>
+
+        
+            <script>
+                // Hide default stripe button
+                document.getElementsByClassName('stripe-button-el')[0]
+                .style.display = 'none';
+            </script>
+
+            <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase</button>
+        
+
+            </form>
+
+        </div>
+        <div class="col-md-6">
+            <img src="/img/book.jpg" alt="harry potter" class="img-fluid">
+        </div>
+    </div>
+</section>
